@@ -24,8 +24,8 @@ export default function EnterExit () {
     <>
       <h1>enter / exit animation</h1>
       <div className="btngroup">
-        <button type="button" onClick={ () => addBoxHandler(3) }>add box</button>
-        <button type="button" onClick={ () => subtractBoxHandler(3) }>remove box</button>
+        <button type="button" onClick={ () => addBoxHandler(1) }>add box</button>
+        <button type="button" onClick={ () => subtractBoxHandler(1) }>remove box</button>
       </div>
 
       <div className="container small">
