@@ -13,8 +13,15 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 2.5vw;
+  grid-row-gap: 2.5vw;
   margin-bottom: 7vw;
   background-color: #EEEEEE;
+}
+
+.container.small {
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
 }
 
 .box {
