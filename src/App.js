@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import Simple from './components/Simple';
 import MouseEvents from './components/MouseEvents';
 import Variants from './components/Variants';
 import EnterExit from './components/EnterExit';
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="wrapper" ref={wrapperRef}>
+      <Simple />
       <MouseEvents />
       <Variants />
       <EnterExit />

@@ -4,7 +4,7 @@ import { generateIndexedArr } from '../utils';
 
 const initBoxes = generateIndexedArr(15);
 
-export default function Variants () {
+export default function EnterExit () {
   const [boxes, setBoxes] = useState(initBoxes);
 
   const addBoxHandler = (count = 1) => {
