@@ -12,12 +12,12 @@ export default function Route2 () {
 
   return (
     <div className="page">
-      <FadeInFromBelow custom={ 0 } delayOffset={ offset }>
+      <FadeInFromBelow index={ 0 } delayOffset={ offset }>
         <h1>Route 3</h1>
       </FadeInFromBelow>
 
       { text.map((item, index) => (
-        <FadeInFromBelow key={ index } custom={ index + 1 } delayOffset={ offset }>
+        <FadeInFromBelow key={ index } index={ index + 1 } delayOffset={ offset }>
           <p>{ item }</p>
         </FadeInFromBelow>
       )) }

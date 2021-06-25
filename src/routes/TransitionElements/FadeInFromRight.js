@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
-export default function FadeInFromRight ({ children, custom, delayOffset = 0, ...rest }) {
+export default function FadeInFromRight ({ children, index, delayOffset = 0, ...rest }) {
   return (
     <motion.div
-      initial={ { x: 100, opacity: 0 } }
+      initial={ { x: 500, opacity: 0 } }
       animate={ { x: 0, opacity: 1 } }
-      transition={ { delay: delayOffset + custom * 0.06, duration: 1 } }
+      transition={ { delay: delayOffset + index * 0.08, duration: 1 } }
       { ...rest }
     >
       { children }
