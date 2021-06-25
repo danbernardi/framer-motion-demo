@@ -5,7 +5,7 @@ import Route1 from './Route1';
 import Route2 from './Route2';
 import Route3 from './Route3';
 import TranslateTransitionRoute from './TransitionRoutes/Translate';
-// import FadeTransitionRoute from './TransitionRoutes/Fade';
+import FadeTransitionRoute from './TransitionRoutes/Fade';
 
 export default function Routes () {
   const location = useLocation();
@@ -15,8 +15,8 @@ export default function Routes () {
       <Switch location={location} key={location.pathname}>
         <TranslateTransitionRoute exact={ true } path="/" component={ Route1 } />
         <TranslateTransitionRoute exact={ true } path="/route-2" component={ Route2 } />
-        <TranslateTransitionRoute exact={ true } path="/route-3" component={ Route3 } />
-        <TranslateTransitionRoute exact={ true } path="/animation-demos" component={ AnimationDemos } />
+        <FadeTransitionRoute exact={ true } path="/route-3" component={ Route3 } />
+        <FadeTransitionRoute exact={ true } path="/animation-demos" component={ AnimationDemos } />
       </Switch>
     </AnimatePresence>
   )
