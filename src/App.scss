@@ -1,12 +1,27 @@
 h1 {
   z-index: 1000;
   position: relative;
+  margin-block-start: 0;
+}
+
+.transition__container {
+  position: relative;
+
+  > div {
+    position: relative;
+  }
+
+  .is-animating {
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .wrapper {
   width: 100%;
   max-width: 890px;
   margin: 0 auto;
+  position: relative;
 }
 
 .container {
@@ -16,29 +31,29 @@ h1 {
   grid-row-gap: 2.5vw;
   margin-bottom: 7vw;
   background-color: #EEEEEE;
-}
 
-.container.small {
-  grid-template-columns: repeat(10, 1fr);
-  grid-column-gap: 1vw;
-  grid-row-gap: 1vw;
+  &.small {
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+  }
 }
 
 .box {
   height: 0;
   padding-bottom: 100%;
   cursor: pointer;
-}
 
-.box.blue {
-  background-color: #0390fc;
+  &.blue {
+    background-color: #0390fc;
+  }
 }
 
 .btngroup {
   display: flex;
   margin-bottom: 20px;
-}
 
-.btngroup button {
-  margin-right: 20px;
+  button {
+    margin-right: 20px;
+  }
 }

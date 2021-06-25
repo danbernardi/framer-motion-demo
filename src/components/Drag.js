@@ -12,7 +12,7 @@ export default function Drag ({ wrapperRef }) {
           className="box blue"
           whileHover={ { scale: 1.05, backgroundColor: '#33a7ff' } }
           drag={ true }
-          dragConstraints={ dragContainerRef }
+          dragConstraints={ wrapperRef }
         />
       </div>
     </>

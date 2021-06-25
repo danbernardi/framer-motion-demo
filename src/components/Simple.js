@@ -8,16 +8,15 @@ export default function Simple () {
         <motion.div
           className="box blue"
           animate={ {
-            // x: 500
             x: 'calc(300% + 7.5vw)',
             rotate: 90,
             scale: [1, 0.5, 1]
           } }
-          transition={{
+          transition={ {
             duration: 3,
             repeat: Infinity,
             repeatType: 'reverse'
-          }}
+          } }
         />
       </div>
     </>

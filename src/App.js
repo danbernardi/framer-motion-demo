@@ -1,21 +1,15 @@
-import { useRef } from 'react';
-import Simple from './components/Simple';
-import MouseEvents from './components/MouseEvents';
-import Variants from './components/Variants';
-import EnterExit from './components/EnterExit';
-import Drag from './components/Drag';
-import './App.css';
+import Routes from './routes';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
+import './App.scss';
 
 function App() {
-  const wrapperRef = useRef();
-
   return (
-    <div className="wrapper" ref={wrapperRef}>
-      <Simple />
-      <MouseEvents />
-      <Variants />
-      <EnterExit />
-      <Drag wrapperRef={ wrapperRef } />
+    <div className="wrapper">
+      <BrowserRouter>
+        <Header />
+        <Routes />
+      </BrowserRouter>
     </div>
   );
 }

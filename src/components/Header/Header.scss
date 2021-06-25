@@ -1,0 +1,8 @@
+.header__nav {
+  display: flex;
+  margin-bottom: 60px;
+
+  li:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}

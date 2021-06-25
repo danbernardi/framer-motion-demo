@@ -39,7 +39,7 @@ export default function Variants () {
       <motion.div
         className="container small"
       >
-        { generateIndexedArr(40).map(item => (
+        { generateIndexedArr(60).map(item => (
           <motion.div
             className="box blue"
             key={item.index}
